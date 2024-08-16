@@ -22,5 +22,5 @@ db.sequelize
   .catch((err) => console.log("Error: " + err));
 
 app.listen(4000, () => {
-  console.log("Server is running on http://localhost:5000/graphql");
+  console.log("Server is running on http://localhost:4000/graphql");
 });
