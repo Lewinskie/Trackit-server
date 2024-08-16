@@ -1,0 +1,21 @@
+{
+  "name": "trackit-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Lewinskie/Trackit-server.git",
+  "author": "Lewinskie <wangaralewis@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
+    "test": "echo \"error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.9.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "sqlite3": "^5.1.7"
+  }
+}
