@@ -8,9 +8,13 @@
   "scripts": {
     "dev": "node index.js",
     "start": "node index.js",
-    "test": "echo \"error: no test specified\" && exit 1"
+    "test": "echo \"error: no test specified\" && exit 1",
+    "migrate:dev": "NODE_ENV=development npx sequelize-cli db:migrate",
+    "migrate:staging": "NODE_ENV=staging npx sequelize-cli db:migrate",
+    "migrate:prod": "NODE_ENV=production npx sequelize-cli db:migrate"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-graphql": "0.12.0",
     "graphql": "15.5.0",
